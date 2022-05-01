@@ -1,54 +1,40 @@
 {
-  "name": "use-dark-hook",
-  "version": "0.2.2",
-  "description": "A light-weight and straight forward library that adds 'dark mode' in your web app using React Hook.",
-  "source": "src/index.js",
-  "main": "build/use-dark-hook.js",
-  "scripts": {
-    "dev": "parcel public/index.html",
-    "build": "webpack --mode production"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/iamdebadipti/use-dark-hook.git"
-  },
-  "author": "iamdebadipti <iamdebadipti@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/iamdebadipti/use-dark-hook/issues"
-  },
-  "homepage": "https://github.com/iamdebadipti/use-dark-hook#readme",
-  "dependencies": {},
-  "peerDependencies": {
-    "react": "^16.8.0"
-  },
-  "devDependencies": {
-    "@babel/cli": "^7.8.4",
-    "@babel/core": "^7.8.6",
-    "@babel/plugin-transform-react-jsx": "^7.8.3",
-    "@babel/preset-env": "^7.8.6",
-    "@babel/preset-react": "^7.8.3",
-    "babel-loader": "^8.0.6",
-    "parcel": "^1.12.4",
-    "prettier": "^1.19.1",
-    "prop-types": "^15.7.2",
-    "react": "^16.13.0",
-    "react-dom": "^16.13.0",
-    "webpack": "^4.41.6",
-    "webpack-cli": "^3.3.11"
-  },
-  "keywords": [
-    "dark-mode",
-    "react-dark-mode",
-    "dark-mode",
-    "theme",
-    "use-hooks",
-    "react",
-    "react-hooks"
-  ],
-  "resolutions": {
-    "**/**/lodash": "^4.17.19",
-    "**/**/node-forge": "^0.10.0",
-    "**/**/ini": "^1.3.6"
-  }
+    "name": "use-dark-hook",
+    "version": "0.4.0-alpha.1.0",
+    "description": "A light-weight and straight forward library that adds 'dark mode' in your web app using React Hook.",
+    "main": "./dist/index.js",
+    "repository": "git@github.com:iamdebadipti/use-dark-hook.git",
+    "author": "iamdebadipti <iamdebadipti@gmail.com>",
+    "license": "MIT",
+    "engines": {
+        "node": ">=12"
+    },
+    "peerDependencies": {
+        "react": ">=16"
+    },
+    "scripts": {
+        "dev": "parcel ./example/index.html --dist-dir build",
+        "watch": "tsc --watch",
+        "build": "tsc",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "devDependencies": {
+        "@types/node": "^17.0.30",
+        "@types/react": "^18.0.8",
+        "@types/react-dom": "^18.0.3",
+        "parcel": "^2.5.0",
+        "prettier": "^2.6.2",
+        "react": "^18.1.0",
+        "react-dom": "^18.1.0",
+        "typescript": "^4.6.4"
+    },
+    "keywords": [
+        "react",
+        "hooks",
+        "react hooks",
+        "use hook",
+        "use dark hook",
+        "dark mode",
+        "dark theme"
+    ]
 }
